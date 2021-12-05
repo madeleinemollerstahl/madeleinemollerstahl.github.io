@@ -42,7 +42,7 @@ nav a:hover {
 
 a.lg {
   background: url(img/png_logga.png) no-repeat center;
-  background-size: 80%;
+  background-size: 70%;
 }
 .social a {
   text-indent: -10000px;
@@ -66,9 +66,9 @@ nav ul.social {
 @media screen and (min-width: 768px) {
   nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between
   }
-
+  
   nav li {
     flex: 1 1 0;
   }
@@ -201,33 +201,39 @@ h4 {
 
 @media (max-width: 800px) {
 .media-rubrik {
-font-size: 22px;
+font-size: 30px;
 align-items: center;
 font-weight: bolder;
-font-kerning: none;
 text-decoration: none;
 }
+.media-rubrik2 {
+  font-size: 30px;
+  align-items: center;
+  font-weight: lighter;
+  text-decoration: none;
+
 .sales-point {
   padding-bottom: 5px;
 }
 }
 
 .hamburger {
+  display: none;
   padding: 1rem;
-  width: 500px;
+  width: 80px;
+  
 }
 
 @media (max-width: 800px) {
   .display-none {
     display: none;
   }
-  .social {
-
+  .hamburger {
+display: flex;
   }
 }
   }
-  /* .flex-container-3 {
-    flex-direction: row; */
+
   }
   .flex-container-2 {
     display: flex;
@@ -534,6 +540,10 @@ text-decoration: none;
   }
   .nav a {
     padding: 2px;
+    justify-content: space-between;
+  }
+  .card__title {
+    font-size: 25px;
   }
   }
 
@@ -576,12 +586,15 @@ text-decoration: none;
 .flex-container-2 {
   justify-content: space-evenly;
 }
-.flex-container-4 {
-
+.flex-container-3 {
+  flex-wrap: wrap;
 }
-
+.flex-container-4 {
+margin: 5%;
+}
 .flex-container-5
-
+margin: 4rem 2rem 2rem 1rem;
+}
 }
 
 
